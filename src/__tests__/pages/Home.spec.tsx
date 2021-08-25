@@ -60,11 +60,11 @@ describe('Home', () => {
     fireEvent.press(taskElement);
 
     expect(markerElement).toHaveStyle({
-      backgroundColor: "#990b0a",
+      backgroundColor: '#1DB863'
     });
     expect(taskElement).toHaveStyle({
-      color: "#990b0a",
-      textDecorationLine: "line-through",
+      color: '#1DB863',
+      textDecorationLine: 'line-through'
     });
   });
 
