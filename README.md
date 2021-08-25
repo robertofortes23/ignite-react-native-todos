@@ -1,6 +1,3 @@
-# ignite-react-native-todos
-Task reminder application.
-
 # Ignite React Native To-Dos
 ### _Ignite Content. React Native Trail. Task reminder application._
 
