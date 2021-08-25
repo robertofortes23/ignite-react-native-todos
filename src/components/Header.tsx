@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image } from 'react-native';
 import { getStatusBarHeight } from 'react-native-iphone-x-helper';
+import LinearGradient from 'react-native-linear-gradient';
 
 import logoImg from '../assets/images/logo/logo.png';
 
@@ -12,15 +13,17 @@ export function Header({ tasksCounter }: HeaderProps) {
   const tasksCounterText = tasksCounter === 1 ? 'tarefa' : 'tarefas'
   
   return (
-    <View style={styles.container}>
+    <LinearGradient style={styles.container} colors={["#390707", "#690b0a"]}>
       <Image source={logoImg} />
-      
+
       <View style={styles.tasks}>
         <Text style={styles.tasksCounter}>Você tem </Text>
-        <Text style={styles.tasksCounterBold}>{tasksCounter} {tasksCounterText}</Text>
+        <Text style={styles.tasksCounterBold}>
+          {tasksCounter} {tasksCounterText}
+        </Text>
       </View>
-    </View>
-  )
+    </LinearGradient>
+  );
 }
 
 const styles = StyleSheet.create({
@@ -28,23 +31,22 @@ const styles = StyleSheet.create({
     paddingTop: getStatusBarHeight(true) + 16,
     paddingHorizontal: 24,
     paddingBottom: 60,
-    backgroundColor: '#8257E5',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    flexDirection: 'row'
+    justifyContent: "space-between",
+    alignItems: "center",
+    flexDirection: "row",
   },
   tasks: {
-    alignItems: 'center',
-    flexDirection: 'row'
+    alignItems: "center",
+    flexDirection: "row",
   },
   tasksCounter: {
     fontSize: 15,
-    color: '#FFF',
-    fontFamily: 'Inter-Regular',
+    color: "#FFF",
+    fontFamily: "Inter-Regular",
   },
   tasksCounterBold: {
     fontSize: 15,
-    color: '#FFF',
-    fontFamily: 'Inter-Bold',
-  }
+    color: "#FFF",
+    fontFamily: "Inter-Bold",
+  },
 });
