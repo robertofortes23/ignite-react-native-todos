@@ -23,5 +23,6 @@ yarn run android
    
 ## Screenshot
 
-![App Screenshot](https://i.imgur.com/0sRLgT2.png)
-
+![App Screenshot](https://i.imgur.com/CkCGdhm.png)
+![App Screenshot](https://i.imgur.com/LnqMGkN.png)
+![App Screenshot](https://i.imgur.com/zHddA5L.png)
